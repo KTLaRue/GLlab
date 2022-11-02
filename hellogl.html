@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Computer Graphics - WebGL Demo</title>
+
+    <link href="resources/bootstrap.min.css" rel="stylesheet">
+    <link href="resources/custom2016.css" rel="stylesheet">
+
+    <script src="glUtil.js"></script>
+    <script src="matrix.js"></script>
+    <script src="glDemo.js"></script>
+</head>
+
+<body onload="setup();">
+    <div class="container headerBar">
+        <h1>WebGL Demo</h1>
+    </div>
+    <div class="container contentWrapper">
+        <div class="pageContent">
+            <h2>WebGL Hello World</h2>
+            <div class="canvas-container">
+                <canvas id="gl-demo" width="640" height="360"></canvas>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        function setup() {
+            setupGL("gl-demo", glDemo);
+        }
+    </script>
+</body>
+</html>
